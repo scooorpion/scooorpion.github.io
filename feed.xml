@@ -3,12 +3,36 @@
     <title>My Blog</title>
     <link href="https://scooorpion.github.io/feed.xml" rel="self" />
     <link href="https://scooorpion.github.io" />
-    <updated>2024-05-19T08:50:50+08:00</updated>
+    <updated>2024-05-27T01:12:20+08:00</updated>
     <author>
         <name>scooorpion</name>
     </author>
     <id>https://scooorpion.github.io</id>
 
+    <entry>
+        <title>ShangHai</title>
+        <author>
+            <name>scooorpion</name>
+        </author>
+        <link href="https://scooorpion.github.io/shanghai.html"/>
+        <id>https://scooorpion.github.io/shanghai.html</id>
+        <media:content url="https://scooorpion.github.io/media/posts/2/zhou-xian-7tFFO6Mq5L4-unsplash.jpg" medium="image" />
+
+        <updated>2024-05-19T09:40:25+08:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://scooorpion.github.io/media/posts/2/zhou-xian-7tFFO6Mq5L4-unsplash.jpg" alt="" />
+                    Caption
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://scooorpion.github.io/media/posts/2/zhou-xian-7tFFO6Mq5L4-unsplash.jpg" class="type:primaryImage" alt="" /></p>
+                <figure class="post__image"><img loading="lazy"  src="https://scooorpion.github.io/media/posts/2/wolfgang-weiser-QGS10EjsA8w-unsplash.jpg" alt="" width="6667" height="3750" sizes="100vw" srcset="https://scooorpion.github.io/media/posts/2/responsive/wolfgang-weiser-QGS10EjsA8w-unsplash-xs.jpg 300w ,https://scooorpion.github.io/media/posts/2/responsive/wolfgang-weiser-QGS10EjsA8w-unsplash-sm.jpg 480w ,https://scooorpion.github.io/media/posts/2/responsive/wolfgang-weiser-QGS10EjsA8w-unsplash-md.jpg 768w ,https://scooorpion.github.io/media/posts/2/responsive/wolfgang-weiser-QGS10EjsA8w-unsplash-lg.jpg 1024w ,https://scooorpion.github.io/media/posts/2/responsive/wolfgang-weiser-QGS10EjsA8w-unsplash-xl.jpg 1360w ,https://scooorpion.github.io/media/posts/2/responsive/wolfgang-weiser-QGS10EjsA8w-unsplash-2xl.jpg 1600w"><figcaption>Caption</figcaption></figure>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Hello World</title>
         <author>
@@ -20,12 +44,13 @@
         <updated>2024-05-19T08:50:50+08:00</updated>
             <summary>
                 <![CDATA[
-                    The First
+                    The First 来自2024年5月27日
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>The First</p>
+                <p>The First </p>
+<p>来自2024年5月27日</p>
 <p> </p>
             ]]>
         </content>
