@@ -10,6 +10,34 @@
     },
     "items": [
         {
+            "id": "https://scooorpion.github.io/li-shi.html",
+            "url": "https://scooorpion.github.io/li-shi.html",
+            "title": "历史",
+            "summary": "历史是隐形的 中国上下五千年的历史文化，积累的哲学，科学，人文。已经可以对待任何事情，任何事物。而世界上一切冲突的本质其实都是人的私利，生死，社会达尔文主义说明了这一点。我们的祖先早已看透了人性，看透了一切事物的本源。而西方只能在基本事实和表面上看待问题 这就是东西方的最大差别，也是东方相较于西方的最大优势。",
+            "content_html": "\n  <p>\n    <br>历史是隐形的<br><br>中国上下五千年的历史文化，积累的哲学，科学，人文。已经可以对待任何事情，任何事物。而世界上一切冲突的本质其实都是人的私利，生死，社会达尔文主义说明了这一点。我们的祖先早已看透了人性，看透了一切事物的本源。而西方只能在基本事实和表面上看待问题\n  </p>\n\n  <p>\n    这就是东西方的最大差别，也是东方相较于西方的最大优势。\n  </p>",
+            "author": {
+                "name": "scooorpion"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-06-16T23:50:50+08:00",
+            "date_modified": "2024-06-16T23:51:52+08:00"
+        },
+        {
+            "id": "https://scooorpion.github.io/ni-xiang-xin-shen-me.html",
+            "url": "https://scooorpion.github.io/ni-xiang-xin-shen-me.html",
+            "title": "你相信神么？",
+            "summary": "如果你相信的话，那就说明神在你之外。",
+            "content_html": "\n  <p>\n    如果你相信的话，那就说明神在你之外。\n  </p>\n\n  <p>\n    \n  </p>",
+            "author": {
+                "name": "scooorpion"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-06-15T13:51:16+08:00",
+            "date_modified": "2024-06-16T23:52:10+08:00"
+        },
+        {
             "id": "https://scooorpion.github.io/dora-erc404-gai-shu.html",
             "url": "https://scooorpion.github.io/dora-erc404-gai-shu.html",
             "title": "Dora-ERC404 概述",
@@ -82,7 +110,7 @@
             "tags": [
             ],
             "date_published": "2024-06-01T23:51:48+08:00",
-            "date_modified": "2024-06-02T00:08:11+08:00"
+            "date_modified": "2024-06-02T20:20:02+08:00"
         },
         {
             "id": "https://scooorpion.github.io/jottings.html",
