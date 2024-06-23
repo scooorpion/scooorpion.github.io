@@ -3,12 +3,81 @@
     <title>FX</title>
     <link href="https://scooorpion.github.io/feed.xml" rel="self" />
     <link href="https://scooorpion.github.io" />
-    <updated>2024-06-16T23:52:10+08:00</updated>
+    <updated>2024-06-23T10:56:56+08:00</updated>
     <author>
         <name>scooorpion</name>
     </author>
     <id>https://scooorpion.github.io</id>
 
+    <entry>
+        <title>The microscopic expression of pressure</title>
+        <author>
+            <name>scooorpion</name>
+        </author>
+        <link href="https://scooorpion.github.io/pressure.html"/>
+        <id>https://scooorpion.github.io/pressure.html</id>
+        <media:content url="https://scooorpion.github.io/media/posts/17/jj-ying-WmnsGyaFnCQ-unsplash.jpg" medium="image" />
+            <category term="Physics"/>
+
+        <updated>2024-06-23T10:31:30+08:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://scooorpion.github.io/media/posts/17/jj-ying-WmnsGyaFnCQ-unsplash.jpg" alt="" />
+                    1. 引言 我们将推导气体压强的微观表达式，通过分子动理论来解释单个分子如何产生宏观压强，并引出玻尔兹曼常数&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://scooorpion.github.io/media/posts/17/jj-ying-WmnsGyaFnCQ-unsplash.jpg" class="type:primaryImage" alt="" /></p>
+                <h4 id="1-引言">1. 引言</h4>
+<p>我们将推导气体压强的微观表达式，通过分子动理论来解释单个分子如何产生宏观压强，并引出玻尔兹曼常数 $ k_B $的意义和作用。</p><h4 id="2-压强的微观定义">2. 压强的微观定义</h4>
+<p>压强$ P $是气体分子对单位面积容器壁施加的平均力：
+$$ P = \frac{F}{A} $$
+其中 $F$ 是分子施加在容器壁上的总力， $A$ 是容器壁的面积。</p><h4 id="3-单个分子对容器壁的冲量">3. 单个分子对容器壁的冲量</h4>
+<p>假设气体分子的质量为 $ m $，速度为 $ v $。一个分子沿着 $ x $ 方向撞击容器壁，并发生弹性碰撞，速度变为 $ -v_x $。碰撞前后的速度变化为：
+$$ \Delta v_x = v_x - (-v_x) = 2v_x $$
+力的变化等于动量的变化率，根据冲量定理：
+$$ \Delta p_x = 2mv_x $$</p><h4 id="4-单个分子对容器壁的力">4. 单个分子对容器壁的力</h4>
+<p>考虑在时间 $ t $ 内，一个分子撞击容器壁的次数。若容器的长度为 $ L $，那么一个分子从一壁到另一壁并返回所需时间为：
+$$ \Delta t = \frac{2L}{v_x} $$
+在时间 $ t $ 内，撞击次数为：
+$$ n = \frac{t}{\Delta t} = \frac{t v_x}{2L} $$
+每次碰撞产生的力为：
+$$ F_x = \frac{\Delta p_x}{\Delta t} = \frac{2mv_x}{\frac{2L}{v_x}} = \frac{mv_x^2}{L} $$</p><h4 id="5-总力和压强">5. 总力和压强</h4>
+<p>对于 $ N $ 个分子，由于分子运动是随机的，均匀分布在三个方向（$ x $、$ y $、$ z $）。在立方体容器中，三维运动的平均速度平方 $ \langle v^2 \rangle $ 在每个方向的分量为：
+$$ \langle v_x^2 \rangle = \langle v_y^2 \rangle = \langle v_z^2 \rangle = \frac{\langle v^2 \rangle}{3} $$
+总力为：
+$$ F = N \cdot \frac{mv_x^2}{L} = N \cdot \frac{m \cdot \frac{\langle v^2 \rangle}{3}}{L} = \frac{N m \langle v^2 \rangle}{3L} $$
+压强 $ P $ 为：
+$$ P = \frac{F}{A} = \frac{F}{L^2} = \frac{N m \langle v^2 \rangle}{3L^3} $$</p><h4 id="6-体积与温度的关系">6. 体积与温度的关系</h4>
+<p>由于 $ L^3 = V $（容器的体积），压强变为：
+$$ P = \frac{N m \langle v^2 \rangle}{3V} $$
+进一步，用理想气体状态方程 $ PV = Nk_B T $（其中 $ k_B $ 是玻尔兹曼常数， $ T $ 是温度），我们可以联系温度和分子的平均动能：
+$$ \frac{N m \langle v^2 \rangle}{3V} = \frac{Nk_B T}{V} $$
+$$ \frac{m \langle v^2 \rangle}{3} = k_B T $$
+由此，我们得出分子的平均动能与温度的关系：
+$$ \frac{1}{2} m \langle v^2 \rangle = \frac{3}{2} k_B T $$
+这是分子动理论的基本结果，表示了气体分子的平均动能和温度之间的关系。</p><h3 id="玻尔兹曼常数--k_b--的解释">玻尔兹曼常数 $ k_B $ 的解释</h3>
+<h4 id="1-玻尔兹曼常数的定义">1. 玻尔兹曼常数的定义</h4>
+<p>玻尔兹曼常数 $ k_B $ 是一个基本物理常数，连接了微观的分子运动与宏观的热力学性质。其值约为：
+$$ k_B \approx 1.380649 \times 10^{-23} , \text{J/K} $$</p><h4 id="2-玻尔兹曼常数的作用">2. 玻尔兹曼常数的作用</h4>
+<ul>
+<li><strong>微观与宏观的桥梁</strong>：玻尔兹曼常数将单个分子或原子的能量尺度与宏观的温度尺度联系起来。</li>
+<li><strong>理想气体状态方程</strong>：在理想气体状态方程中，玻尔兹曼常数用于描述气体分子平均动能和温度的关系：
+$$ PV = Nk_B T $$</li>
+<li><strong>气体分子的平均动能</strong>：单个气体分子的平均动能与温度的关系为：
+$$ \langle E_k \rangle = \frac{3}{2} k_B T $$</li>
+<li><strong>熵的统计定义</strong>：玻尔兹曼常数也出现在熵的统计定义中：
+$$ S = k_B \ln \Omega $$</li>
+</ul>
+<h4 id="3-理想气体常数--r--与玻尔兹曼常数的关系">3. 理想气体常数 $ R $ 与玻尔兹曼常数的关系</h4>
+<p>理想气体常数 $ R $ 与玻尔兹曼常数 $ k_B $ 通过阿伏伽德罗常数 $ N_A $ 连接：
+$$ R = N_A k_B $$
+其中 $ N_A $ 是阿伏伽德罗常数，约为：
+$$ N_A \approx 6.022 \times 10^{23} , \text{mol}^{-1} $$</p><p>通过分子动理论，我们推导了气体压强的微观表达式，并解释了玻尔兹曼常数在这一过程中扮演的重要角色。玻尔兹曼常数 $ k_B $ 是将微观粒子的运动行为与宏观热力学性质（如温度和压强）联系起来的桥梁，是统计力学和热力学中不可或缺的常数。</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>历史</title>
         <author>
@@ -16,15 +85,19 @@
         </author>
         <link href="https://scooorpion.github.io/li-shi.html"/>
         <id>https://scooorpion.github.io/li-shi.html</id>
+        <media:content url="https://scooorpion.github.io/media/posts/15/camille-brodard-AVi4lkHl5L4-unsplash.jpg" medium="image" />
+            <category term="Thought"/>
 
         <updated>2024-06-16T23:50:50+08:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://scooorpion.github.io/media/posts/15/camille-brodard-AVi4lkHl5L4-unsplash.jpg" alt="" />
                     历史是隐形的 中国上下五千年的历史文化，积累的哲学，科学，人文。已经可以对待任何事情，任何事物。而世界上一切冲突的本质其实都是人的私利，生死，社会达尔文主义说明了这一点。我们的祖先早已看透了人性，看透了一切事物的本源。而西方只能在基本事实和表面上看待问题 这就是东西方的最大差别，也是东方相较于西方的最大优势。
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://scooorpion.github.io/media/posts/15/camille-brodard-AVi4lkHl5L4-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 
   <p>
     <br>历史是隐形的<br><br>中国上下五千年的历史文化，积累的哲学，科学，人文。已经可以对待任何事情，任何事物。而世界上一切冲突的本质其实都是人的私利，生死，社会达尔文主义说明了这一点。我们的祖先早已看透了人性，看透了一切事物的本源。而西方只能在基本事实和表面上看待问题
@@ -37,49 +110,25 @@
         </content>
     </entry>
     <entry>
-        <title>你相信神么？</title>
-        <author>
-            <name>scooorpion</name>
-        </author>
-        <link href="https://scooorpion.github.io/ni-xiang-xin-shen-me.html"/>
-        <id>https://scooorpion.github.io/ni-xiang-xin-shen-me.html</id>
-
-        <updated>2024-06-15T13:51:16+08:00</updated>
-            <summary>
-                <![CDATA[
-                    如果你相信的话，那就说明神在你之外。
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-  <p>
-    如果你相信的话，那就说明神在你之外。
-  </p>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
         <title>Dora-ERC404 概述</title>
         <author>
             <name>scooorpion</name>
         </author>
         <link href="https://scooorpion.github.io/dora-erc404-gai-shu.html"/>
         <id>https://scooorpion.github.io/dora-erc404-gai-shu.html</id>
+        <media:content url="https://scooorpion.github.io/media/posts/9/xavier-von-erlach-d-3jJUO74Go-unsplash.jpg" medium="image" />
             <category term="Blockchain"/>
 
         <updated>2024-06-02T15:58:33+08:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://scooorpion.github.io/media/posts/9/xavier-von-erlach-d-3jJUO74Go-unsplash.jpg" alt="" />
                     Dora-ERC404是一种基于以太坊区块链的代币标准，它在功能和特性上融合了以往的代币标准，如ERC-20和ERC- 721。在区块链世界里，不同类型的代币标准经常因其设计目的不同而有所区别。ERC-20是最为广泛认可的代币标准 之一，它被用来创建和发行可替代的数字货币和其他资产，这些代币是"同质化的"，意味着每个代币都是等价的并可&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://scooorpion.github.io/media/posts/9/xavier-von-erlach-d-3jJUO74Go-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 <div class="page" title="Page 1">
 <div class="section">
 <div class="section">
@@ -255,7 +304,7 @@
         </content>
     </entry>
     <entry>
-        <title>结果主义 (consequentialism)</title>
+        <title>Consequentialism</title>
         <author>
             <name>scooorpion</name>
         </author>
@@ -313,29 +362,32 @@
         </content>
     </entry>
     <entry>
-        <title>高中物理拓展</title>
+        <title>Physics Expand</title>
         <author>
             <name>scooorpion</name>
         </author>
         <link href="https://scooorpion.github.io/gao-zhong-wu-li-tuo-zhan.html"/>
         <id>https://scooorpion.github.io/gao-zhong-wu-li-tuo-zhan.html</id>
+        <media:content url="https://scooorpion.github.io/media/posts/6/pat-whelen-BL7nmhTfSRk-unsplash.jpg" medium="image" />
             <category term="Study"/>
 
         <updated>2024-06-02T10:31:05+08:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://scooorpion.github.io/media/posts/6/pat-whelen-BL7nmhTfSRk-unsplash.jpg" alt="" />
                     1。柯尼希定理，质点系的动能定理，动量定理，系统的动能定理等等。用途极广，小到作业大到高考都可能用上。 2。角动量的初步知识，天体运动那块可能用的上。 3。静力学的一些补充知识，力矩力臂之类的。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://scooorpion.github.io/media/posts/6/pat-whelen-BL7nmhTfSRk-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 
   <p>
     <br>
   </p>
 
-    <h3 id="li-xue-bu-fen">
-      力学部分
+    <h3 id="mechanical-partlessbrgreater">
+      Mechanical part<br>
     </h3>
 
   <p>
@@ -370,8 +422,8 @@
     8。微元法，其实最好学一点点微积分，课改之前定积分计算还是高考要求的内容，所以我当年那个班的同学玩这招都是手到擒来，现在这部分被删了挺可惜的。
   </p>
 
-    <h3 id="dian-ci-xue-bu-fen">
-      电磁学部分
+    <h3 id="electromagnetics">
+      Electromagnetics
     </h3>
 
   <p>
@@ -403,7 +455,7 @@
   </p>
 
   <p>
-    天体运动总能量为$-GMm/2a$，在比较机械能大小时很有用
+    天体运动总能量为$-GMm/2a$，用于比较机械能大小
   </p>
             ]]>
         </content>
@@ -490,7 +542,7 @@
         </content>
     </entry>
     <entry>
-        <title>jottings</title>
+        <title>untitled</title>
         <author>
             <name>scooorpion</name>
         </author>
@@ -527,16 +579,19 @@
         </author>
         <link href="https://scooorpion.github.io/amusing-ourselves-to-death.html"/>
         <id>https://scooorpion.github.io/amusing-ourselves-to-death.html</id>
+        <media:content url="https://scooorpion.github.io/media/posts/3/museums-victoria-4klKI9u0p9I-unsplash.jpg" medium="image" />
             <category term="Book report"/>
 
         <updated>2024-05-28T01:01:08+08:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://scooorpion.github.io/media/posts/3/museums-victoria-4klKI9u0p9I-unsplash.jpg" alt="" />
                     引入 创作背景 在20世纪后半叶，随着电视媒体的兴起，渗透了日常生活的方方面面，成为现代社会生活的关键组成部分。电视的娱乐性、碎片化的表达方式排斥了思考与逻辑，将一切文化内容都转化为娱乐的附庸，使人们逐渐沉溺于娱乐至死的状态。尼尔·波兹曼关注并深刻理解了主流媒介变革对大众和社会的深远影响。&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://scooorpion.github.io/media/posts/3/museums-victoria-4klKI9u0p9I-unsplash.jpg" class="type:primaryImage" alt="" /></p>
                 <h1>引入</h1>
 <h3>创作背景</h3>
 <p>在20世纪后半叶，随着电视媒体的兴起，渗透了日常生活的方方面面，成为现代社会生活的关键组成部分。电视的娱乐性、碎片化的表达方式排斥了思考与逻辑，将一切文化内容都转化为娱乐的附庸，使人们逐渐沉溺于娱乐至死的状态。尼尔·波兹曼关注并深刻理解了主流媒介变革对大众和社会的深远影响。</p>
