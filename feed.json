@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://scooorpion.github.io/aimu-qian-de-ying-xiang.html",
+            "url": "https://scooorpion.github.io/aimu-qian-de-ying-xiang.html",
+            "title": "AI目前的影响",
+            "summary": "其实信息时代AI最大的好处就是可以免除信息茧房，减少算法的影响，不会被广告，不实信息，等诸多因素干扰。 目前的所有搜索习惯，以及聊天，无论是学业上的，英语口语，甚至是生病吃什么药，都完全离不开大模型的帮助。以至于我不需要再使用搜索引擎，直接与AI语音对话，效率是最高的。 ChatGPT甚至可以通过我画的图例理解我的问题，豆包可以直接通过我的highlight来搜索，这两个实实在在的大幅提升了我的效率，而且不会收不良因素干扰。&hellip;",
+            "content_html": "<p>其实信息时代AI最大的好处就是可以免除信息茧房，减少算法的影响，不会被广告，不实信息，等诸多因素干扰。</p>\n<p>目前的所有搜索习惯，以及聊天，无论是学业上的，英语口语，甚至是生病吃什么药，都完全离不开大模型的帮助。以至于我不需要再使用搜索引擎，直接与AI语音对话，效率是最高的。</p>\n<p>ChatGPT甚至可以通过我画的图例理解我的问题，豆包可以直接通过我的highlight来搜索，这两个实实在在的大幅提升了我的效率，而且不会收不良因素干扰。</p>\n<p>以前AI是辅助品，现在搜索引擎反而成为替代品了。</p>\n<p>是的，我一直认为目前以LLM的能力，最大的作用就是替代搜索引擎，因为其有强大的信息整合结合能力。</p>\n<p>至于绘图，什么其它的内容，只是锦上添花罢了，实操起来其实并非效率有人工高。</p>\n<p> </p>",
+            "author": {
+                "name": "scooorpion"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-06-28T00:57:16+08:00",
+            "date_modified": "2024-06-28T00:57:16+08:00"
+        },
+        {
             "id": "https://scooorpion.github.io/pressure.html",
             "url": "https://scooorpion.github.io/pressure.html",
             "title": "The microscopic expression of pressure",
@@ -149,21 +163,6 @@
             ],
             "date_published": "2024-05-28T01:01:08+08:00",
             "date_modified": "2024-06-23T10:45:12+08:00"
-        },
-        {
-            "id": "https://scooorpion.github.io/shanghai.html",
-            "url": "https://scooorpion.github.io/shanghai.html",
-            "title": "ShangHai",
-            "content_html": "<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://scooorpion.github.io/media/posts/2/katherine-gu-0UofLbRyr-I-unsplash.jpg\" alt=\"\" width=\"7941\" height=\"5297\" sizes=\"(min-width: 760px) 660px, calc(93.18vw - 30px)\" srcset=\"https://scooorpion.github.io/media/posts/2/responsive/katherine-gu-0UofLbRyr-I-unsplash-xs.webp 320w ,https://scooorpion.github.io/media/posts/2/responsive/katherine-gu-0UofLbRyr-I-unsplash-sm.webp 480w ,https://scooorpion.github.io/media/posts/2/responsive/katherine-gu-0UofLbRyr-I-unsplash-md.webp 768w ,https://scooorpion.github.io/media/posts/2/responsive/katherine-gu-0UofLbRyr-I-unsplash-xl.webp 1024w\"></figure>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://scooorpion.github.io/media/posts/2/denys-nevozhai-D8iZPlX-2fs-unsplash.jpg\" alt=\"\" width=\"5083\" height=\"3389\" sizes=\"(min-width: 760px) 660px, calc(93.18vw - 30px)\" srcset=\"https://scooorpion.github.io/media/posts/2/responsive/denys-nevozhai-D8iZPlX-2fs-unsplash-xs.webp 320w ,https://scooorpion.github.io/media/posts/2/responsive/denys-nevozhai-D8iZPlX-2fs-unsplash-sm.webp 480w ,https://scooorpion.github.io/media/posts/2/responsive/denys-nevozhai-D8iZPlX-2fs-unsplash-md.webp 768w ,https://scooorpion.github.io/media/posts/2/responsive/denys-nevozhai-D8iZPlX-2fs-unsplash-xl.webp 1024w\"></figure>\n<p> </p>",
-            "image": "https://scooorpion.github.io/media/posts/2/zhou-xian-7tFFO6Mq5L4-unsplash.jpg",
-            "author": {
-                "name": "scooorpion"
-            },
-            "tags": [
-                   "Photos"
-            ],
-            "date_published": "2024-05-19T09:40:25+08:00",
-            "date_modified": "2024-06-02T16:03:00+08:00"
         }
     ]
 }
