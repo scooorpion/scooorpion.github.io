@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script><script type="text/javascript">window.MathJax = {
+            tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']],
+              displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            options: {
+              skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+              ignoreHtmlClass: 'tex2jax_ignore',
+              processHtmlClass: 'tex2jax_process'
+            }
+          };</script><title>Swift Notes - FX</title><meta name="description" content="Basic 打印常量和变量 Printing&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><script async defer="defer" type="text/javascript" src="https://cloud.umami.is/script.js" data-website-id="04439f08-d145-4e0d-9dec-94051ae08e3a" data-auto-track="true" data-do-not-track="false" data-cache="false"></script><meta name="theme-color" content="#17181E" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)"><meta name="msapplication-navbutton-color" content="#FFFFFF"><meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF"><link rel="stylesheet" href="https://scooorpion.github.io/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://scooorpion.github.io/swift-notes.html"><link rel="alternate" type="application/atom+xml" href="https://scooorpion.github.io/feed.xml"><link rel="alternate" type="application/json" href="https://scooorpion.github.io/feed.json"><link rel="preload" href="https://scooorpion.github.io/assets/dynamic/fonts/publicsans/publicsans.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://scooorpion.github.io/assets/css/style.css?v=2b8a47dac99fa5245d37d0c5489ea96c"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://scooorpion.github.io/swift-notes.html"},"headline":"Swift Notes","datePublished":"2024-07-16T20:51","dateModified":"2024-07-16T20:51","description":"Basic 打印常量和变量 Printing&hellip;","author":{"@type":"Person","name":"scooorpion","url":"https://scooorpion.github.io/authors/scooorpion/"},"publisher":{"@type":"Organization","name":"scooorpion"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript><style>.fi{fill:none;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}</style></head><body><div class="content content--nosidebar"><div class="left-bar"><div class="left-bar__inner"><header class="header"><a class="logo" href="https://scooorpion.github.io/">FX</a><nav class="navbar"><button class="navbar__toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle__box"><span class="navbar__toggle__inner">Menu</span></span></button><ul class="navbar__menu"><li class="tltp tltp--top"><a class="tltp" href="https://scooorpion.github.io/" target="_self" aria-label="Home"><svg class="fi fi-home" width="24px" height="24px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><use href="https://scooorpion.github.io/media/plugins/featherIcons/feather-sprite.svg#home"/></svg> <span>Home</span></a></li><li class="tltp tltp--top"><a class="tltp" href="https://scooorpion.github.io/tags/" target="_self" aria-label="Pages Tag"><svg class="fi fi-tag" width="24px" height="24px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><use href="https://scooorpion.github.io/media/plugins/featherIcons/feather-sprite.svg#tag"/></svg> <span>Pages Tag</span></a></li><li class="tltp tltp--top"><a class="tltp" href="https://scooorpion.github.io/photos-gallery.html" target="_self" aria-label="Photos"><svg class="fi fi-camera" width="24px" height="24px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><use href="https://scooorpion.github.io/media/plugins/featherIcons/feather-sprite.svg#camera"/></svg> <span>Photos</span></a></li><li><a class="tltp" href="https://gaokao.vercel.app" target="_blank" aria-label="Gaokao"><svg class="fi fi-arrow-up-right" width="24px" height="24px" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><use href="https://scooorpion.github.io/media/plugins/featherIcons/feather-sprite.svg#arrow-up-right"/></svg> <span>Gaokao</span></a></li></ul></nav><a class="logo logo--atbottom" href="./">FX</a></header></div></div><main class="main"><article class="post"><div class="main__inner"><div class="post__meta"><div class="post__author"><img src="https://scooorpion.github.io/media/website/141690554149_.pic.jpg" loading="lazy" height="695" width="720" alt="scooorpion" class="post__author__avatar"><div><a href="https://scooorpion.github.io/authors/scooorpion/" class="post__author__name">scooorpion</a></div></div><div class="post__date"><time datetime="2024-07-16T20:51">Jul 16, 2024</time></div></div><header class="post__header"><h1 class="post__title">Swift Notes</h1></header><div class="post__entry"><h2 id="basic">Basic</h2><h3 id="打印常量和变量-printing-constants-and-variables">打印常量和变量 <em>Printing Constants and Variables</em></h3><p><code>print(_:separator:terminator:)</code></p><ul><li><code>separator</code> : 用于分隔</li><li><code>terminator</code> : 用于结尾</li><li>字符串插值（string interpolation）：<code>&quot;\(value)&quot;</code></li></ul><h3 id="decimal">Decimal</h3><ul><li><p>四则运算一定要同类型，否则会造成精度缺失或者一些更严重的问题。</p></li><li><p>0.1 + 0.2 != 0.3</p><p>计算机内部使用二进制来表示浮点数，而二进制无法精确表示十进制的小数点后无限位的数值。 具体来说，十进制小数 <code>0.1</code> 在二进制中是一个无限循环小数。二进制中没有直接的表示方法来精确表示 <code>0.1</code>，因此计算机使用最接近的浮点数表示来近似它。同样，<code>0.2</code> 也是一个无法精确表示的十进制小数，在二进制中有类似的近似问题。 当你把两个这样的近似值相加时，结果会受到这种近似的影响，产生一个稍微大于 <code>0.3</code> 的值。这是浮点数精度问题的一个常见例子，也是为什么在涉及浮点数的比较时，经常需要设置一个误差范围（或者使用特定的数学库来处理高精度的小数运算）。</p><p>在Swift中，你可以使用 <code>Double</code> 类型来进行浮点数运算，但是由于其内部表示的限制，你可能会遇到这种精度问题。如果你需要更精确的小数运算，可以考虑使用 <code>Decimal</code> 类型，它提供了更高的精度，但相应的也会消耗更多的内存和计算资源。</p></li></ul><p><code>Decimal</code> 需要 <strong>Foundation</strong> Framework，是一个可选类型（Optional）,你不能保证这个数字一定能转化成功</p><pre><code class="language-swift">import Foundation
+
+import Foundation 
+let decimal: Decimal = 1 
+let decimal2 = Decimal（1）
+let decimal3: Decimal = 3.24 //这个写法是有问题的，因为相当于在Decimal中存了一个Double
+print（decima13）//3.2400000000003
+
+let decimal4 = Decimal（string： &quot;hel1o&quot;）//
+print（decima14）//nil
+</code></pre><blockquote><p>Decimal 类型用于表示高精度的十进制数。由于直接将浮点数（如 Double）转换为 Decimal 可能会导致精度问题，因此需要使用字符串初始化 Decimal 以避免这种问题。</p></blockquote><pre><code class="language-swift">let a = Decimal（string： &quot;0.1&quot;）！ 
+let b = Decimal（string： &quot;0.2&quot;）！
+print（a + b） //0.3
+
+//address the issue right?
+</code></pre><h3 id="character--string-字符与字符串">Character &amp; String 字符与字符串</h3><p>Character由Unicode组成</p><p>String 的存储细节：</p><pre><code>你好棒👍 =&gt; 20320 22909 26834 128077 127998
+</code></pre><p>其中后两串数字分别对应着👍：第一串表示✋🏻，第二串表示肤色（Amazing）</p><blockquote><p>String -&gt; 一串的 Character</p><p>Character -&gt; 一串的 Unicode</p><p>所以它們共同的特徵就是「都是一串的某個東西」 因此有一些共同的概念可以用，像是都可以數(count)</p></blockquote><p>一个工具叫zalgo text文字生成器，可以随机组合Unicode生成一些乱码的文字</p><h3 id="三元条件运算符-ternary-conditional-operator">三元条件运算符 <em>ternary conditional operator</em></h3><p>三元<em>条件运算符</em>是一种特殊的运算符，由三部分组成，形式为<code>question ? answer1 : answer2</code>。</p><p>如果<code>question</code>为真，则评估<code>answer1</code>并返回其值；否则，评估<code>answer2</code>并返回其值。</p><p>三元条件运算符是以下代码的简写：</p><pre><code class="language-swift">if question {
+    answer1
+} else {
+    answer2
+}
+</code></pre><h2 id="函数">函数</h2><p>一些关于函数的概念：</p><ol><li><strong>形参（Formal Parameters 形式参数）</strong>：在函数定义中声明的参数，它们是函数内部使用的变量，用于接收传递给函数的值。</li><li><strong>实参（Actual Parameters 实际参数）</strong>：在函数调用时传递给函数的值，它们是实际的数据，用于初始化形参。</li><li><strong>返回类型</strong>：函数可以返回一个值，这个值的类型就是返回类型。如果函数不返回任何值，则返回类型为<code>void</code>。</li><li><strong>方法（Method）</strong>：在面向对象编程中，方法是与对象相关联的函数。它通常可以访问和操作对象的属性。</li><li><strong>属性（Property）</strong>：对象的属性是与对象状态相关的变量。在面向对象编程中，属性可以是变量或函数，用于表示对象的状态。</li></ol><blockquote><p>属性如何作为函数？在面向对象编程（OOP）中，属性可以被看作是对象的特征或状态，它们可以是简单的变量，也可以是通过计算得到的值，这就涉及到计算属性的概念。</p></blockquote><h3 id="函数参数名称与参数标签">函数参数名称与参数标签</h3><p>在Swift中，函数参数可以有两个名字：一个是参数标签（argument label），另一个是参数名称（parameter name）。参数标签在函数调用时使用，而参数名称在函数体内使用。</p><blockquote><p>有点绕，简单点说就是第一个<strong>参数标签</strong>用于调用的时候，第二个参数名称用于函数体里面用</p></blockquote><pre><code class="language-swift">func greet(person name: String) {
+   //greet(参数标签 参数名称: String)
+    print(&quot;Hello, \(name)!&quot;)
+}
+
+greet(person: &quot;Alice&quot;)
+// 调用时使用参数标签 person
+</code></pre><p>可以省略参数标签：</p><pre><code class="language-swift">func greet(_ name: String) {
+    print(&quot;Hello, \(name)!&quot;)
+}
+
+greet(&quot;Alice&quot;)
+// 这样就类似C++里面的调用方式
+</code></pre><p><strong>参数标签和参数名称</strong></p><ul><li><strong>两个名称</strong>（参数标签和参数名称）：第一个名称是参数标签，用于函数调用时，第二个名称是参数名称，用于函数体内。</li><li><strong>一个名称</strong>（参数标签和参数名称相同）：如果只有一个名称，它既是参数标签，又是参数名称。</li></ul><pre><code class="language-swift">print(_: separator: terminator:)
+//很明显这个separator就是参数标签==参数名称
+</code></pre><h3 id="可变参数">可变参数</h3><p>一个*可变参数（variadic parameter）*可以接受零个或多个值。函数调用时，你可以用可变参数来指定函数参数可以被传入不确定数量的输入值。通过在变量类型名后面加入（<code>...</code>）的方式来定义可变参数。</p><p>可变参数的传入值在函数体中变为此类型的一个数组。例如，一个叫做 <code>numbers</code> 的 <code>Double...</code> 型可变参数，在函数体内可以当做一个叫 <code>numbers</code> 的 <code>[Double]</code> 型的数组常量。</p><p>下面的这个函数用来计算一组任意长度数字的 <em>算术平均数（arithmetic mean)</em>：</p><pre><code class="language-Swift">func arithmeticMean(_ numbers: Double...) -&gt; Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+arithmeticMean(1, 2, 3, 4, 5)
+// 返回 3.0, 是这 5 个数的平均数。
+arithmeticMean(3, 8.25, 18.75)
+// 返回 10.0, 是这 3 个数的平均数。
+</code></pre><p>一个函数能拥有多个可变参数。可变参数后的第一个形参前必须加上实参标签。实参标签用于区分实参是传递给可变参数，还是后面的形参。</p><p><code>print</code>中：</p><pre><code class="language-swift">func print(_ items: Any..., separator: String = &quot; &quot;, terminator: String = &quot;\n&quot;)
+</code></pre><p>使用的<code>Any...</code>就表示可以用很多不同的类型，而且可以同时传入很多，(比如Int String Character etc.)</p><p><code>String = &quot; &quot;</code>这个是预设数值</p><h3 id="多重返回值函数">多重返回值函数</h3><p>你可以用元组（tuple）类型让多个值作为一个复合值从函数中返回。</p><p>下例中定义了一个名为 <code>minMax(array:)</code> 的函数，作用是在一个 <code>Int</code> 类型的数组中找出最小值与最大值。</p><pre><code class="language-Swift">func minMax(array: [Int]) -&gt; (min: Int, max: Int) { //多了一个(min: Int, max: Int)用于查询函数的返回值
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..&lt;array.count] {
+        if value &lt; currentMin {
+            currentMin = value
+        } else if value &gt; currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+
+//(currentMin, currentMax) -&gt; (min: Int, max: Int) 变量改为了上面所定义的min与max
+</code></pre><p><code>minMax(array:)</code> 函数返回一个包含两个 <code>Int</code> 值的元组，这些值被标记为 <code>min</code> 和 <code>max</code> ，<strong>以便查询函数的返回值时可以通过名字访问它们。</strong></p><p>在 <code>minMax(array:)</code> 的函数体中，在开始的时候设置两个工作变量 <code>currentMin</code> 和 <code>currentMax</code> 的值为数组中的第一个数。然后函数会遍历数组中剩余的值并检查该值是否比 <code>currentMin</code> 和 <code>currentMax</code> 更小或更大。最后数组中的最小值与最大值作为一个包含两个 <code>Int</code> 值的元组返回。</p><p><strong>因为元组的成员值已被命名</strong>，因此可以通过 <code>.</code> 语法来检索找到的最小值与最大值：</p><pre><code class="language-Swift">let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
+print(&quot;min is \(bounds.min) and max is \(bounds.max)&quot;)
+// 打印“min is -6 and max is 109”
+</code></pre><p>需要注意的是，元组的成员不需要在元组从函数中返回时命名，因为它们的名字已经在函数返回类型中指定了。</p><h3 id="面向对象-oop-的哲学">面向对象 OOP 的哲学</h3><p>面向对象编程（OOP）是一种编程范式，强调将数据和操作数据的代码封装在一起，称之为“对象”。OOP的哲学在于模拟现实世界，通过对象和类来表示和组织程序。</p><h4 id="核心概念">核心概念</h4><ol><li><strong>对象（Object）</strong>：现实世界中的实体在程序中的抽象。对象具有属性（数据）和方法（行为）。</li><li><strong>类（Class）</strong>：对象的蓝图或模板。类定义了对象的属性和方法。</li><li><strong>封装（Encapsulation）</strong>：将数据和操作数据的方法封装在对象内部，隐藏实现细节。</li><li><strong>继承（Inheritance）</strong>：一个类可以继承另一个类的属性和方法，促进代码重用。</li><li><strong>多态（Polymorphism）</strong>：对象可以用多种形式存在，允许不同对象以相同接口调用。</li></ol><h4 id="为什么叫面向对象">为什么叫“面向对象”</h4><p>“面向对象”这个词反映了这种编程方法的核心：以对象为中心。程序中的所有东西都是对象，或者与对象相关。对象代表了程序中的实体，类定义了这些实体的结构和行为。</p><h5 id="面向对象-vs-面向过程">面向对象 vs 面向过程</h5><ul><li><strong>面向过程编程（Procedural Programming）</strong>：将程序视为一系列步骤或过程（函数）的集合。程序的焦点在于函数和过程的调用顺序。</li><li><strong>面向对象编程（Object-Oriented Programming）</strong>：将程序视为对象的集合。程序的焦点在于对象及其交互。</li></ul><h5 id="面向对象的本质和内涵">面向对象的本质和内涵</h5><ul><li><strong>模拟现实</strong>：通过对象和类模拟现实世界中的实体和关系。</li><li><strong>组织代码</strong>：通过类和对象组织代码，使其更具可读性和可维护性。</li><li><strong>封装和抽象</strong>：隐藏实现细节，只暴露必要的接口。</li><li><strong>复用性和可扩展性</strong>：通过继承和多态实现代码复用和扩展。</li></ul><h5 id="对象的真实含义">对象的真实含义</h5><p>在OOP中，对象是程序中的基本单元，包含了属性和方法：</p><ul><li><strong>属性（Attributes）</strong>：对象的状态或数据。</li><li><strong>方法（Methods）</strong>：对象的行为或功能。</li></ul><p>例如，一个“Person”对象可能有“name”和“age”属性，以及“greet”方法。</p><h5 id="计算属性">计算属性</h5><p>**计算属性是类或结构体中的属性，但它们的值不是直接存储的，而是通过计算得来的。**计算属性本质上是getter和setter函数：</p><ul><li><strong>Getter</strong>：返回计算属性的值。</li><li><strong>Setter</strong>：设置计算属性的值。</li></ul><h4 id="为什么属性可以作为函数">为什么属性可以作为函数</h4><p>计算属性之所以可以作为函数，是因为它们通过getter和setter函数计算和设置值。这样，属性的值可以根据其他属性动态计算，而不需要显式存储。</p><h4 id="示例：计算属性">示例：计算属性</h4><pre><code class="language-swift">class Circle {
+    var radius: Double
+
+    var circumference: Double {
+        get {
+            return 2 * .pi * radius
+        }
+        set {
+            radius = newValue / (2 * .pi)
+        }
+    }
+
+    init(radius: Double) {
+        self.radius = radius
+    }
+}
+
+let circle = Circle(radius: 5)
+print(circle.circumference) // 输出 31.4159
+
+circle.circumference = 31.4159
+print(circle.radius) // 输出 5
+</code></pre><p>在这个示例中，<code>circumference</code> 是一个计算属性，通过getter和setter函数计算和设置圆的周长和半径。</p><h3 id="元组-tuples--类型别名-type-aliases">元组 <em>Tuples</em> &amp; 类型别名 <em>type aliases</em></h3><p><em>元组（tuples）</em> 把多个值组合成一个复合值。元组内的值可以是任意类型，并不要求是相同类型。</p><blockquote><p>可以减去命名变量的痛苦，</p></blockquote><pre><code class="language-swift">let http404Error = (404, &quot;Not Found&quot;)
+// http404Error 的类型是 (Int, String)，值是 (404, &quot;Not Found&quot;)
+//http404Error.0 == 404
+//http404Error.1 == &quot;Not Found&quot;
+</code></pre><p>你可以把任意顺序的类型组合成一个元组，这个元组可以包含所有类型。只要你想，你可以创建一个类型为 <code>(Int, Int, Int)</code> 或者 <code>(String, Bool)</code> 或者其他任何你想要的组合的元组。</p><h4 id="元组分解（decompose）">元组分解（decompose）:</h4><pre><code class="language-swift">let (statusCode, statusMessage) = http404Error
+print(&quot;The status code is \(statusCode)&quot;)
+// 输出“The status code is 404”
+print(&quot;The status message is \(statusMessage)&quot;)
+// 输出“The status message is Not Found”
+</code></pre><p>你可以使用 <code>typealias</code> 关键字来定义类型别名。</p><p>当你想要给现有类型起一个更有意义的名字时，类型别名非常有用。假设你正在处理特定长度的外部资源的数据：</p><pre><code class="language-swift">typealias AudioSample = UInt16
+</code></pre><p>定义了一个类型别名之后，你可以在任何使用原始名的地方使用别名：</p><pre><code class="language-swift">var maxAmplitudeFound = AudioSample.min
+// maxAmplitudeFound 现在是 0
+</code></pre><p>本例中，<code>AudioSample</code> 被定义为 <code>UInt16</code> 的一个别名。因为它是别名，<code>AudioSample.min</code> 实际上是 <code>UInt16.min</code>，所以会给 <code>maxAmplitudeFound</code> 赋一个初值 <code>0</code>。</p><blockquote><p>你可以把Tuples当做一个简单的类型使用</p></blockquote><pre><code class="language-swift">typealias Human = （String, Double, String）
+let man: Human = (&quot;A&quot;,10.2,&quot;B&quot;)// 建立了一个“Human类型&quot;，但其实本质上是一个元祖
+</code></pre><h3 id="可选类型（optionals）">可选类型*（optionals）*</h3><p>可选类型表示两种可能： 或者有值， 你可以解析可选类型访问这个值， 或者根本没有值。</p><p><strong>An Example:</strong></p><p>Swift 的 <code>Int</code> 类型有一种<em>构造器</em>，作用是将一个 <code>String</code> 值转换成一个 <code>Int</code> 值。然而，并不是所有的字符串都可以转换成一个整数。字符串 <code>&quot;123&quot;</code> 可以被转换成数字 <code>123</code> ，但是字符串 <code>&quot;hello, world&quot;</code> 不行。</p><blockquote><p>构造器是一种特殊的函数，用于创建类、结构体或枚举的实例。它们不返回值，而是负责初始化实例的所有属性，并确保实例在第一次使用前处于有效状态。</p><pre><code class="language-swift">struct Person {
+ var name: String
+ var age: Int
+
+ init(name: String, age: Int) { //就是构造函数
+     self.name = name
+     self.age = age
+ }
+}
+
+let person = Person(name: &quot;John&quot;, age: 25)
+</code></pre></blockquote><p>下面的例子使用这种构造器来尝试将一个 <code>String</code> 转换成 <code>Int</code>：</p><pre><code class="language-Swift">let possibleNumber = &quot;123&quot;
+let convertedNumber = Int(possibleNumber)
+// convertedNumber 被推测为类型 &quot;Int?&quot;， 或者类型 &quot;optional Int&quot;
+</code></pre><p>因为该构造器可能会失败，所以它返回一个 <em>可选类型</em> （optional）<code>Int</code>，而不是一个 <code>Int</code>。一个可选的 <code>Int</code> 被写作 <code>Int?</code> 而不是 <code>Int</code>。问号暗示包含的值是可选类型，也就是说可能包含 <code>Int</code> 值也可能 <em>不包含值</em> 。（不能包含其他任何值比如 <code>Bool</code> 值或者 <code>String</code> 值。只能是 <code>Int</code> 或者什么都没有。）</p><h3 id="nil">nil</h3><p>你可以给可选变量赋值为 <code>nil</code> 来表示它没有值：</p><pre><code class="language-Swift">var serverResponseCode: Int? = 404
+// serverResponseCode 包含一个可选的 Int 值 404
+serverResponseCode = nil
+// serverResponseCode 现在不包含值
+</code></pre><blockquote><p>注意</p><p><code>nil</code> 不能用于非可选的常量和变量。如果你的代码中有常量或者变量需要处理值缺失的情况，请把它们声明成对应的可选类型。</p></blockquote><p>如果你声明一个可选变量但是没有赋值，它们会自动被设置为 <code>nil</code>：</p><pre><code class="language-swift">var surveyAnswer: String?
+// surveyAnswer 被自动设置为 nil
+</code></pre><blockquote><p>注意</p><p>Swift 的 <code>nil</code> 和 Objective-C 中的 <code>nil</code> 并不一样。在 Objective-C 中，<code>nil</code> 是一个指向不存在对象的指针。在 Swift 中，<code>nil</code> 不是指针——它是一个确定的值，用来表示值缺失。任何类型的可选状态都可以被设置为 <code>nil</code>，不只是对象类型。</p></blockquote><h3 id="if-语句以及强制解析">if 语句以及强制解析</h3><p>你可以使用 <code>if</code> 语句和 <code>nil</code> 比较来判断一个可选值是否包含值。你可以使用“相等”(<code>==</code>)或“不等”(<code>!=</code>)来执行比较。</p><p>如果可选类型有值，它将不等于 <code>nil</code>：</p><pre><code class="language-swift">if convertedNumber != nil {
+    print(&quot;convertedNumber contains some integer value.&quot;)
+}
+// 输出“convertedNumber contains some integer value.”
+</code></pre><p>当你确定可选类型确实包含值之后，你可以在可选的名字后面加一个感叹号（<code>!</code>）来获取值。这个惊叹号表示“我知道这个可选有值，请使用它。”这被称为可选值的 <em>强制解析（forced unwrapping）</em> ：</p><pre><code class="language-swift">if convertedNumber != nil {
+    print(&quot;convertedNumber has an integer value of \(convertedNumber!).&quot;)
+}
+// 输出“convertedNumber has an integer value of 123.”
+</code></pre><p>更多关于 <code>if</code> 语句的内容，请参考 <a href="https://gitbook.swiftgg.team/swift/swift-jiao-cheng/05_control_flow">控制流</a>。</p><blockquote><p>注意</p><p>使用 <code>!</code> 来获取一个不存在的可选值会导致运行时错误。使用 <code>!</code> 来强制解析值之前，一定要确定可选包含一个非 <code>nil</code> 的值。</p></blockquote></div><footer class="post__footer"><div class="post__last-updated">This article was updated on <time datetime="2024-07-16T20:51">Jul 16, 2024</time></div><div class="post__share"><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fscooorpion.github.io%2Fswift-notes.html&amp;via=FX&amp;text=Swift%20Notes" class="js-share twitter tltp tltp--top" aria-label="Twitter" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://scooorpion.github.io/assets/svg/svg-map.svg#twitter"/></svg> <span>Twitter</span> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fscooorpion.github.io%2Fswift-notes.html&amp;media=undefined&amp;description=Swift%20Notes" class="js-share pinterest tltp tltp--top" aria-label="Pinterest" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://scooorpion.github.io/assets/svg/svg-map.svg#pinterest"/></svg> <span>Pinterest</span></a></div></footer></div></article><div class="post__section post__comments"><div class="main__inner"></div></div></main></div><script defer="defer" src="https://scooorpion.github.io/assets/js/scripts.min.js?v=12d8fcd46db8fdc7af6797ec26849875"></script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><script defer="defer" src="https://scooorpion.github.io/assets/js/quicklink.umd.js?v=a52ee49fe4afff274f8c30fe880ddc13"></script><script>window.addEventListener('load', () =>{
+      quicklink.listen();
+      });</script><script defer="defer" src="https://scooorpion.github.io/media/plugins/syntaxHighlighter/prism.js"></script></body></html>
