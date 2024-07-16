@@ -3,7 +3,7 @@
     <title>FX</title>
     <link href="https://scooorpion.github.io/feed.xml" rel="self" />
     <link href="https://scooorpion.github.io" />
-    <updated>2024-07-16T20:51:45+08:00</updated>
+    <updated>2024-07-16T22:27:55+08:00</updated>
     <author>
         <name>scooorpion</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://scooorpion.github.io/swift-notes.html"/>
         <id>https://scooorpion.github.io/swift-notes.html</id>
+            <category term="Swift"/>
 
         <updated>2024-07-16T20:51:45+08:00</updated>
             <summary>
